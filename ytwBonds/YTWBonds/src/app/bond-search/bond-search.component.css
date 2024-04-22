@@ -1,0 +1,17 @@
+.container {
+    margin: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .bond-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .calculate-btn {
+    margin-top: 20px;
+  }

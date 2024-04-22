@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar..." [(ngModel)]="searchQuery">
+      <button (click)="search()">Buscar</button>
+    </div>
+  
+    <div class="bond-details">
+      <div class="bond-item">
+        <p>{{ bond?.name }}</p>
+        <p>Valor Facial: {{ bond?.faceValue }}</p>
+        <p>Tasa de Cupón: {{ bond?.couponRate }}</p>
+        <p>Fecha de Vencimiento: {{ bond?.maturityDate }}</p>
+        <p>Tipo de Cupón: {{ bond?.couponType }}</p>
+        <p>Tipo de Bonificación: {{ bond?.bondType }}</p>
+      </div>
+    </div>
+  
+    <button class="calculate-btn" (click)="calculateJWT()">Calcular JWT</button>
+    <h1>{{ ytw.calculatedYtw }}</h1>
+  </div>
